@@ -1,8 +1,11 @@
-
+html,
+body{
+    margin: 0;
+}
 #site{
     display: grid;
-    grid-template-columns: minmax(250px, 1fr) minmax(750px, 3fr);
-    grid-template-rows: 1fr 8fr;
+    grid-template-columns: 350px minmax(1000px, 3fr);
+    grid-template-rows: minmax(250px, 1fr) 8fr;
     height: 100vh;
 
 
@@ -11,16 +14,70 @@
 
 #sidebar{
     background-color: blue;
+    font-size: 20px;
     grid-area: span 2 / span 1;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+
 
 }
 
 #header{
     background-color: aqua;
     grid-area: span 1/ span 1;
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+
+
+
 }
+
+#header > #searchbar {
+    grid-area: span 1 / span 3;
+
+}
+
+#header > #toprightprofile{
+
+    grid-area: span 1 / span 2;
+}
+
+#header > #greeting{
+    grid-area: span 1 / span 3;
+}
+
+#header > #buttons { 
+    grid-area: span 1 / span 2;
+}
+
+
 
 #content{
     background-color: white;
     grid-area: span 1 / span 1;
+}
+
+#sidebar > #title,
+#sidebar > .settings{
+    margin-left: 30px;
+}
+
+#sidebar > #title{
+    margin: 20px;
+    font-size: 2em;
+}
+
+#sidebar > .settings{
+    font-size: 1.3em;
+}
+#sidebar > .settings > ul{
+    list-style: none;
+}
+#sidebar > .settings > ul > li{
+
+    margin-bottom: 15px;
+
 }

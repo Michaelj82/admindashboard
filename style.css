@@ -4,7 +4,7 @@ body{
 }
 #site{
     display: grid;
-    grid-template-columns: 250px minmax(1000px, 3fr);
+    grid-template-columns: 250px minmax(400px, 3fr);
     grid-template-rows: minmax(100px, 1fr) 8fr;
     height: 100vh;
 

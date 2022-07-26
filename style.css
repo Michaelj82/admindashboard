@@ -15,7 +15,7 @@ body{
 #sidebar{
     background-color: #15752a;
     font-size: 20px;
-    grid-area: span 2 / span 1;
+    grid-area: span 3 / span 1;
     color: white;
     display: grid;
     grid-template-rows: 1fr 9fr;
@@ -137,7 +137,7 @@ body{
 
 .searchbarstyle > input{
     border-radius: 15px;
-    background-color: gainsboro;
+    background-color: red;
     flex: 0.75;
 }
 

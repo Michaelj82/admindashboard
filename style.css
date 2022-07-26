@@ -137,7 +137,7 @@ body{
 
 .searchbarstyle > input{
     border-radius: 15px;
-    background-color: red;
+    background-color: gainsboro;
     flex: 0.75;
 }
 

@@ -180,7 +180,6 @@ body{
 
 #content > ul{
     grid-area: span 3 / span 2;
-    background-color: aqua;
 
 
 
@@ -205,7 +204,18 @@ body{
     width: minmax(300px, 1fr);
     background-color: white;
 
+    border-radius: 15px;
 
+
+    display: grid;
+    grid-template-columns: 2fr 48fr;
+
+
+}
+#content > ul > li > .yellowbar{
+    background-color: yellow;
+    grid-area: span 1 / span 1;
+    border-radius: 15px 0px 0px 15px;
 }
 
 
@@ -247,6 +257,7 @@ body{
     margin-bottom: 10px;
 }
 #content > #rightside > #trending{
+    grid-area: span 1/ span 1;
     background-color: red;
 
 }

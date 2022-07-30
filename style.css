@@ -22,6 +22,8 @@ body{
     display: grid;
     grid-template-rows: 1fr 9fr;
 
+    
+
 
 }
 
@@ -98,7 +100,6 @@ body{
 
     display: flex;
     align-items: center;
-    border: solid;
     grid-area: span 1 / span 3;
 }
 
@@ -119,7 +120,6 @@ body{
     height: 100%;
     align-items: center;
     grid-area: span 1 / span 2;
-    border: solid;
 }
 
 .headerbuttons > button{
@@ -157,7 +157,6 @@ body{
 
 
     background-color: #ad7242;
-    box-shadow: 0 0 30px #333;
 
     grid-area: span 1 / span 1;
 }
@@ -200,8 +199,8 @@ body{
         
     margin: 1em;
 
-    height: minmax(200px, 1fr);
-    width: minmax(300px, 1fr);
+    height: 1fr;
+    width: 1fr;
     background-color: white;
 
     border-radius: 15px;
@@ -209,12 +208,37 @@ body{
 
     display: grid;
     grid-template-columns: 2fr 48fr;
+    grid-template-rows: 7fr 1fr;
+
+    box-shadow: 0 8px 2px -2px #333;
+
 
 
 }
-#content > ul > li > .yellowbar{
-    background-color: yellow;
+
+#content > ul > li > .text{
+    margin: 10px;
+    border-radius: 15px;
     grid-area: span 1 / span 1;
+
+}
+
+#content > ul > li > .icons{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-area: span 2 / span 1;
+}
+
+#content > ul > li > .icons > svg{
+    margin-left: 25px;
+}
+
+
+
+#content > ul > li > .yellowbar{
+    background-color: #ba9d09;
+    grid-area: span 2 / span 1;
     border-radius: 15px 0px 0px 15px;
 }
 
@@ -241,6 +265,8 @@ body{
     width: 100%;
     background-color: #15752a;
     border-radius: 15px;
+    box-shadow: 0 8px 2px -2px #333;
+
 
 }
 

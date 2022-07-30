@@ -23,10 +23,34 @@ body{
 
 }
 
+
+#sidebar > #title,
+#sidebar > .settings{
+    margin-left: 30px;
+}
+
+#sidebar > #title{
+    margin: 20px;
+    font-size: 2em;
+}
+
+#sidebar > .settings{
+    font-size: 1.3em;
+}
+#sidebar > .settings > ul{
+    list-style: none;
+}
+#sidebar > .settings > ul > li{
+
+    margin-bottom: 15px;
+
+}
+
 #header{
     background-color: #4a9e42;
     box-shadow: 0 0 30px #333;
     grid-area: span 1/ span 1;
+    min-width: 940px;
     display: grid;
 
     grid-template-columns: repeat(5, 1fr);
@@ -68,36 +92,6 @@ body{
 }
 
 
-
-#content{
-    background-color: #ad7242;
-    box-shadow: 0 0 30px #333;
-
-    grid-area: span 1 / span 1;
-}
-
-#sidebar > #title,
-#sidebar > .settings{
-    margin-left: 30px;
-}
-
-#sidebar > #title{
-    margin: 20px;
-    font-size: 2em;
-}
-
-#sidebar > .settings{
-    font-size: 1.3em;
-}
-#sidebar > .settings > ul{
-    list-style: none;
-}
-#sidebar > .settings > ul > li{
-
-    margin-bottom: 15px;
-
-}
-
 .searchbarstyle{
 
     display: flex;
@@ -128,7 +122,7 @@ body{
 
 .headerbuttons > button{
     height: 75%;
-    width: 30%;
+    width: 200px;
     border-radius: 15%;
 }
 
@@ -147,4 +141,103 @@ body{
     max-height: 40px;
     max-width: 100%;
     object-fit: contain;
+}
+
+
+
+#content{
+    display: grid;
+
+    min-width: 1000px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr 5fr 5fr 1fr;
+
+
+    background-color: #ad7242;
+    box-shadow: 0 0 30px #333;
+
+    grid-area: span 1 / span 1;
+}
+
+#content > #projectheader{
+    display: flex;
+    grid-area: span 1 / span 3;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: 10px;
+    font-size: 1.5rem;
+
+
+}
+
+#content > #projectheader > #announcements{
+    margin-right: 30px;
+}
+
+
+#content > ul{
+    grid-area: span 3 / span 2;
+    background-color: aqua;
+
+
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    
+
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#content > ul > li{
+        
+    margin: 1em;
+
+    height: minmax(200px, 1fr);
+    width: minmax(300px, 1fr);
+    background-color: white;
+
+
+}
+
+
+
+
+#content > #rightside{
+    grid-area: span 3 / span 1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    margin-left: 1em;
+    margin-right: 1em;
+
+
+
+}
+
+#content > #rightside > #announcements, #trending{
+
+    height: 100%;
+    width: 100%;
+    background-color: #15752a;
+    border-radius: 15px;
+
+}
+
+#content > #rightside > #announcements{
+
+
+}
+
+#content > #rightside > #trending{
+    background-color: red;
+
 }
